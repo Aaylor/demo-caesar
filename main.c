@@ -9,11 +9,9 @@ void gen_test(int user_shift, int len, char *str)
 
     printf("Encrypt text '%s'\n", str);
     res1 = encrypt(str, len, user_shift);
-    printf("Result: %s\n", res1);
 
     printf("Decrypt text '%s'\n", res1);
     res2 = decrypt(res1, len, user_shift);
-    printf("Result: %s\n", res2);
 
     free(res1);
     free(res2);
