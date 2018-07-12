@@ -37,5 +37,9 @@ int main(void)
     user_shift = tis_interval(-INT_MAX, INT_MAX);
     gen_test(user_shift, len, str);
 
+    printf("\nTest 4: All possible input\n");
+    tis_make_unknown(str, len - 1);
+    gen_test(user_shift, len, str);
+
     return 0;
 }
